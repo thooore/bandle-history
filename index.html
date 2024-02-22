@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Bandle History</h1>
+
+    <input id="answerFileInput" type="text" class="input" placeholder="202311.txt"/>
+    <button id="anserSetToCurrentMonth" onclick="setAnswerCurrentMonth()">Go To Current Month</button>
+    <button id="loadAnswerFileButton" onclick="getAnswersUrl()">Load Data File</button>
+
+    <div id="selectListParent"></div>
+    <button id="loadButton" onclick="loadSong()">Load</button>
+    <button onclick="revealInfo()">Show Info</button>
+    <div id="info"></div>
+    <div id="audioParent" style="display:flex; flex-direction:column;"></div>
+    <button onclick="revealHint()">Reveal Hint</button>
+    <button onclick="revealSong()">Reveal Song</button>
+    <button onclick="openYoutube()">Open YouTube</button>
+    <div id="hint"></div>
+    <div id="song"></div>
+
+    <div id="guessCounter"></div>
+    <div class="form-container">
+        <form class="form">
+            <input id="searchInput" type="text" class="input" placeholder="search..." />
+        </form>
+    </div>
+    <div class="results-container">
+        <div class="resultsList" id="resultsList" style="display:flex; flex-direction:column;">
+
+        </div>
+    </div>
+    <script src="answer.js"></script>
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
